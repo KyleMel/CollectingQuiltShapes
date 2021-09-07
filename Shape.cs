@@ -9,6 +9,13 @@ namespace CollectingQuiltShapes
     // Base Class
     public class Shape
     {
-
+        public string Name { get; set; }
+        public string Color { get; set; }
+        public int Side { get; set; }
+       
+        public Shape()
+        {
+            Console.WriteLine("First entry point");
+        }
     }
 }
