@@ -7,7 +7,16 @@ using System.Threading.Tasks;
 namespace CollectingQuiltShapes
 {
     // Derived Class
-    class Square
+    class Square : Shape
     {
+        public Shape DefineSquare()
+        {
+            Console.Write("Square Selected!\n Enter Color: ");
+            Name = "Square";
+            Color = Console.ReadLine();
+            Console.Write(" Enter Length: ");
+            Side = int.Parse(Console.ReadLine());
+            return new Shape();
+        }
     }
 }
