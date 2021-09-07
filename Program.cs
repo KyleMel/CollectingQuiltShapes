@@ -16,12 +16,15 @@ namespace CollectingQuiltShapes
                 var choice = int.Parse(Console.ReadLine());
                 if (choice == 1)
                 {
+                    Square square = new Square();
                 }
                 if (choice == 2)
                 {
+                    Rectangle rectangle = new Rectangle();
                 }
                 if (choice == 3)
                 {
+                    Triangle triangle = new Triangle();
                 }
                 if (choice == 4)
                     Console.WriteLine();
