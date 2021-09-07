@@ -9,5 +9,6 @@ namespace CollectingQuiltShapes
     // Derived Class
     class Rectangle
     {
+
     }
 }
