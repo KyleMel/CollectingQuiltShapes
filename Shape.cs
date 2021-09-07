@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CollectingQuiltShapes
 {
     // Base Class
-    public class Shape
+    class Shape
     {
         public string Name { get; set; }
         public string Color { get; set; }
@@ -15,7 +15,8 @@ namespace CollectingQuiltShapes
        
         public Shape()
         {
-            Console.WriteLine("First entry point");
+            //Entry point from any choice in program
+            Console.Write("");
         }
     }
 }

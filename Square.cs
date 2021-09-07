@@ -16,6 +16,7 @@ namespace CollectingQuiltShapes
             Color = Console.ReadLine();
             Console.Write(" Enter Length: ");
             Side = int.Parse(Console.ReadLine());
+            // return brings it back to public Shape which repeats Console Out.
             return new Shape();
         }
     }

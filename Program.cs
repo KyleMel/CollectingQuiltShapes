@@ -17,14 +17,18 @@ namespace CollectingQuiltShapes
                 if (choice == 1)
                 {
                     Square square = new Square();
+                    square.DefineSquare();
                 }
                 if (choice == 2)
                 {
                     Rectangle rectangle = new Rectangle();
+                    rectangle.DefineRectangle();
                 }
                 if (choice == 3)
                 {
                     Triangle triangle = new Triangle();
+                    triangle.DefineTriangle();
+
                 }
                 if (choice == 4)
                     Console.WriteLine();

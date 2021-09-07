@@ -14,6 +14,7 @@ namespace CollectingQuiltShapes
         public Shape DefineTriangle()
         {
             Console.Write("Triangle Selected!\n Enter Color: ");
+            Name = "Triangle";
             Color = Console.ReadLine();
             Console.Write(" Enter first length: ");
             Side = int.Parse(Console.ReadLine());
@@ -21,6 +22,7 @@ namespace CollectingQuiltShapes
             Side2 = int.Parse(Console.ReadLine());
             Console.Write(" Enter third Length: ");
             Side3 = int.Parse(Console.ReadLine());
+            // return brings it back to public Shape which repeats Console Out.
             return new Shape();
         }
     }
