@@ -9,15 +9,15 @@ namespace CollectingQuiltShapes
     // Derived Class
     class Square : Shape
     {
-        public Shape DefineSquare()
+        public void DefineSquare()
         {
             Console.Write("Square Selected!\n Enter Color: ");
             Name = "Square";
             Color = Console.ReadLine();
             Console.Write(" Enter Length: ");
-            Side = int.Parse(Console.ReadLine());
-            // return brings it back to public Shape which repeats Console Out.
-            return new Shape();
+            int side = int.Parse(Console.ReadLine());
+            Area = side * side;
+            //need to add exceptions for impossible shape
         }
     }
 }

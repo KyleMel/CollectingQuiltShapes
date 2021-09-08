@@ -9,18 +9,17 @@ namespace CollectingQuiltShapes
     // Derived Class
     class Rectangle : Shape
     {
-        int Side2;
-        public Shape DefineRectangle()
+        public void DefineRectangle()
         {
             Console.Write("Rectangle Selected!\n Enter Color: ");
             Name = "Rectangle";
             Color = Console.ReadLine();
             Console.Write(" Enter Length: ");
-            Side = int.Parse(Console.ReadLine());
+            int side = int.Parse(Console.ReadLine());
             Console.Write(" Enter Width: ");
-            Side2 = int.Parse(Console.ReadLine());
-            // return brings it back to public Shape which repeats Console Out.
-            return new Shape();
+            int side2 = int.Parse(Console.ReadLine());
+            Area = side * side2;
+            //need to add exceptions for impossible shape
         }
     }
 }

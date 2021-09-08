@@ -11,12 +11,6 @@ namespace CollectingQuiltShapes
     {
         public string Name { get; set; }
         public string Color { get; set; }
-        public int Side { get; set; }
-       
-        public Shape()
-        {
-            //Entry point from any choice in program
-            Console.Write("");
-        }
+        public int Area { get; set; }
     }
 }

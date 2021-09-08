@@ -10,6 +10,9 @@ namespace CollectingQuiltShapes
     {
         static void Main(string[] args)
         {
+            var shapes = new List<Shape>();
+
+
             while (true)
             {
                 Console.Write("Choose a shape:\n 1.Square\n 2.Rectangle\n 3.Triangle\n 4.Show Quilt\n Enter: ");
@@ -18,26 +21,35 @@ namespace CollectingQuiltShapes
                 {
                     Square square = new Square();
                     square.DefineSquare();
+                    shapes.Add(square);
                 }
                 if (choice == 2)
                 {
                     Rectangle rectangle = new Rectangle();
                     rectangle.DefineRectangle();
+                    shapes.Add(rectangle);
                 }
                 if (choice == 3)
                 {
                     Triangle triangle = new Triangle();
                     triangle.DefineTriangle();
-
+                    shapes.Add(triangle);
                 }
                 if (choice == 4)
-                    Console.WriteLine();
-
-
+                {
+                    foreach(var shape in shapes)
+                    {
+                        Console.WriteLine($"Shape: {shape.Name}, Color: {shape.Color}, Area: {shape.Area}");
+                    }
+                }
                 Console.Write("Continue?\nEnter Y/N: ");
                 var end = Console.ReadLine().ToUpper();
                 if (end != "Y")
                     break;
+            }
+            foreach(var shape in shapes)
+            {
+                Console.WriteLine($"Shape: {shape.Name}, Color: {shape.Color}, Area: {shape.Area}");
             }
             Console.Write("Done");
         }
@@ -45,9 +57,5 @@ namespace CollectingQuiltShapes
 }
 
 /* TO DO
- * Need to actually store variables in Name, Color, Side/1/2/3
- * Need to add collections to store shapes/colors/area
- * Need to display list
- * Need to add math to calculate area/length
  * Need to add exceptions for incorrect variable assignment from user
 */
